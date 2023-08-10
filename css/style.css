@@ -1,0 +1,1553 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    --purple: #7971ea;
+    --pink: #e83e8c;
+    --orange: #ef6c57;
+    --teal: #46ddb0;
+    --white: #fff;
+    --dark: #000;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../images/background.jpg');
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* ********************** header section starts *********** */
+header {
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+header .navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: all 0.3s ease;
+    z-index: 9999;
+
+
+}
+
+.navbar.sticky {
+    padding: 15px 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+header .navbar .logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+header .navbar .logo a:hover {
+    color: var(--pink);
+}
+
+header .navbar .nav-items {
+    display: flex;
+    align-items: center;
+
+
+}
+
+header .navbar .nav-items li {
+    margin: 0 2.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--white);
+
+}
+
+
+header .navbar .nav-items a li:hover {
+    color: var(--orange);
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+
+
+header .navbar .right-side-btn {
+    background-color: var(--purple);
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 1.2rem 2.6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 2.6rem;
+    cursor: pointer;
+
+}
+
+header .navbar .right-side-btn a {
+    color: var(--white);
+
+}
+
+header .navbar .right-side-btn:hover {
+    background-image: radial-gradient(circle 874px at 9.8% 8%, rgba(255, 20, 175, 1) 0%, rgba(22, 22, 22, 1) 58.4%);
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: var(--purple);
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 3rem;
+    z-index: 9999;
+    border-radius: 6px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ****************** header section ends ************* */
+
+
+
+/* ******************** main section starts ****************/
+
+.main-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75rem;
+    width: 100%;
+
+}
+
+.main-section .container {
+
+    position: relative;
+    margin-top: 100px;
+}
+
+
+/**************** left side************/
+
+.main-section .container .main-left-side {
+    margin-left: 0;
+    margin-top: 10rem;
+    padding: 40px 0;
+
+
+}
+
+.main-section .container .main-left-side h1 {
+    font-size: 4.2rem;
+}
+
+.main-section .container .main-left-side p {
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+
+.main-section .container .main-left-side-btn {
+    margin-top: 4rem;
+}
+
+.main-section .container .main-left-side-btn a {
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 2.6rem;
+    padding: 1.6rem 4rem;
+    text-transform: uppercase;
+
+}
+
+.main-section .container .main-left-side-btn a:hover {
+    background-image: radial-gradient(circle 874px at 9.8% 8%, rgba(255, 20, 175, 1) 0%, rgba(22, 22, 22, 1) 58.4%);
+}
+
+
+/* ************* right side****************/
+
+.main-section .container .main-right-side {
+    color: var(--gray-dark);
+    padding: 40px 30px;
+
+
+}
+
+.main-section .container .main-right-side .box {
+    padding: 30px 20px;
+    margin-left: 20px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.main-section .container .main-right-side .box .box-title {
+    font-size: 2.6rem;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main-section .container .main-right-side .box form {
+    min-height: 400px;
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 1rem;
+    padding: 40px 30px;
+
+}
+
+.main-section .container .main-right-side .box form input {
+    width: 95%;
+    padding: 12px 10px;
+    font-size: 1.7rem;
+    margin: 1rem auto;
+    border-radius: 0.6rem;
+    border: 1px solid #6c757d;
+    outline: none;
+    background-color: #ebe1e1;
+
+}
+
+.main-section .container .main-right-side .box .sign-up-btn {
+    background-image: radial-gradient(circle 874px at 9.8% 8%, rgba(255, 20, 175, 1) 0%, rgba(22, 22, 22, 1) 58.4%);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.6rem 1.2rem;
+    width: 30%;
+    margin-left: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 2.6rem;
+    text-align: center;
+
+
+
+}
+
+.main-section .container .main-right-side .box .sign-up-btn:hover {
+    background-image: linear-gradient(178.9deg, rgba(176, 57, 105, 1) 5.1%, rgba(229, 113, 159, 1) 109.3%);
+
+
+}
+
+
+/* ********************* main section ends*************** */
+
+
+
+
+/* ******************* courses section start******************* */
+.courses-offer {
+    position: relative;
+
+}
+
+.courses-offer .max-width {
+    height: auto;
+    width: 100%;
+    padding: 60px 0;
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+
+
+
+}
+
+.courses-offer .max-width .headings h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+}
+
+.courses-offer .max-width .box {
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 5px;
+    padding: 12px;
+    background-color: #ebe1e1;
+    color: var(--dark);
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.courses-offer .max-width .box a img {
+
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+
+}
+
+.courses-offer .max-width .box .duration {
+
+    padding: 1.2rem 0;
+    text-align: left;
+    margin-left: 14px;
+    font-weight: 300;
+
+}
+
+.courses-offer .max-width .box h1 {
+    font-size: 3rem;
+    color: var(--purple);
+}
+
+.courses-offer .max-width .box h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.courses-offer .max-width .box p {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--gray);
+
+}
+
+.courses-offer .max-width .box .students {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--gray);
+
+}
+
+.courses-offer .max-width .box .icon {
+    color: var(--purple);
+}
+
+.courses-offer .max-width .box:hover {
+    transform: translateY(-20px);
+    transition: 0.5s linear;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+
+.courses-offer .max-width .carousel-indicators {
+
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+
+}
+
+
+/************* .courses-offer section ends*********** */
+
+
+
+/************* .programs-offer section starts*********** */
+
+
+
+.programs-offer {
+    position: relative;
+
+}
+
+.programs-offer .max-width {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 60px 0;
+}
+.programs-offer .headings{
+    margin-bottom: 30px;
+}
+.programs-offer .headings h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.programs-offer .headings p {
+    font-size: 2rem;
+    padding: 0 20rem;
+    font-weight: 500;
+}
+
+.programs-offer .feature-div-first,
+.programs-offer .feature-div-third {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.programs-offer .feature-div-second {
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(0, 0, 0, 0.3) 122.3%);
+}
+
+.programs-offer .feature-div-first .container .content,
+.programs-offer .feature-div-second .container .content,
+.programs-offer .feature-div-third .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs-offer .feature-div-first .feature-left-side,
+.programs-offer .feature-div-second .feature-right-side,
+.programs-offer .feature-div-third .feature-left-side {
+    position: relative;
+}
+
+.programs-offer .feature-div-first .feature-left-side img,
+.programs-offer .feature-div-second .feature-right-side img,
+.programs-offer .feature-div-third .feature-left-side img {
+    height: 60rem;
+    width: 60rem;
+}
+
+
+.programs-offer .feature-div-first .feature-right-side,
+.programs-offer .feature-div-second .feature-left-side,
+.programs-offer .feature-div-third .feature-right-side {
+    padding-left: 60px;
+}
+
+
+.programs-offer .feature-div-first .feature-right-side h1,
+.programs-offer .feature-div-second .feature-left-side h1,
+.programs-offer .feature-div-third .feature-right-side h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.programs-offer .feature-div-first .feature-right-side p,
+.programs-offer .feature-div-second .feature-left-side p,
+.programs-offer .feature-div-third .feature-right-side p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 2;
+
+}
+
+.programs-offer .feature-div-first .feature-right-side .icon i,
+.programs-offer .feature-div-second .feature-left-side .icon i,
+.programs-offer .feature-div-third .feature-right-side .icon i {
+    height: 32px;
+    width: 32px;
+    padding: 6px 0 0 6px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+
+/* ************* program section ends********** */
+
+
+
+/* ************* teacher section starts********** */
+.teachers {
+    position: relative;
+
+}
+
+.teachers .max-width {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.teachers .headings {
+    margin-bottom: 60px;
+}
+
+.teachers .headings h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.teachers .headings p {
+    font-size: 2rem;
+    padding: 0 20rem;
+    font-weight: 500;
+}
+
+.teachers .container .content .box {
+    font-family: 'Fira Sans', sans-serif;
+    height: 400px;
+    position: relative;
+    background-color: #ebe1e1;
+    color: var(--dark);
+
+
+}
+
+.teachers .container .content .box:hover {
+    transform: translateY(-30px);
+    transition: 0.5s linear;
+
+}
+
+.teachers .container .content .box h1 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-top: 50px;
+    padding-top: 100px;
+
+
+}
+
+.teachers .container .content .box h2 {
+    font-size: 2rem;
+    color: var(--teal);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.teachers .container .content .box p {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 15px 30px;
+
+}
+
+.teachers .container .content .box h1:hover {
+    cursor: pointer;
+    color: var(--purple);
+    transition: all 0.5s;
+
+}
+
+.teachers .container .content .box .image {
+    position: relative;
+}
+
+.teachers .container .content .box img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+/* ************* teacher section ends********** */
+
+
+
+/* ************* student section starts********** */
+.student {
+    position: relative;
+}
+
+.student .max-width {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student .max-width .image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.student .max-width .text {
+    margin: 20px 0;
+
+}
+
+.student .max-width .text h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+
+}
+
+.student .max-width .text p {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px 300px;
+
+}
+
+/* ************* student section ends********** */
+
+
+
+/* ************* FAQ section starts********** */
+.FAQ {
+    position: relative;
+}
+
+.FAQ .max-width {
+    height: auto;
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(0, 0, 0, 0.3) 122.3%);
+}
+
+.FAQ .headings h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 50px 0;
+}
+
+.FAQ .max-width .container {
+    position: relative;
+}
+
+.FAQ .max-width .container::before {
+    content: " ";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: url("images/magicpattern-blob-1656852304247.svg");
+    z-index: 9999;
+}
+
+
+
+.FAQ .container .left-side {
+    width: 50%;
+}
+
+.FAQ .container .left-side .box {
+    height: 550px;
+    width: 400px;
+    background-color: var(--white);
+    color: var(--dark);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.FAQ .container .left-side .box h2 {
+    padding: 22px 10px;
+    margin-left: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.FAQ .container .left-side .box i {
+    color: var(--white);
+    background-color: var(--purple);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 5px;
+
+}
+
+.FAQ .container .right-side .image img {
+    height: 600px;
+    width: 600px;
+
+}
+
+.FAQ .container .left-side .box:hover {
+    transform: translateY(-30px);
+    transition: 0.5s linear;
+    background-color: #ebe1e1;
+}
+
+
+
+/* ************* FAQ section ends********** */
+
+
+/************ contact us section starts************* */
+.contactUs {
+    position: relative;
+}
+
+.contactUs .max-width {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+}
+
+.contactUs .max-width .headings {
+    margin-bottom: 40px;
+    padding: 20px 200px;
+
+}
+
+.contactUs .max-width .headings h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.contactUs .max-width .headings p {
+    font-size: 2rem;
+
+}
+
+.contactUs .container .content form {
+    position: relative;
+    padding: 20px;
+    margin-left: -20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+
+}
+
+.contactUs .container .content input {
+    font-size: 1.8rem;
+    background-color: var(--white);
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: #ebe1e1;
+    color: var(--gray);
+}
+
+.contactUs .container .content textarea {
+    height: 280px;
+    font-size: 1.8rem;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: #ebe1e1;
+    color: var(--gray);
+
+}
+
+
+.contactUs .max-width .form-btn {
+
+    transition: 0.5s linear;
+
+}
+
+.contactUs .max-width .form-btn button {
+
+    height: auto;
+    width: 50%;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    transition: 0.5s linear;
+
+
+}
+
+.contactUs .max-width .form-btn button:hover {
+
+    transition: 0.5s linear;
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    
+
+}
+
+
+
+/************ contact us section ends************* */
+
+
+
+
+/*************** footer section starts along with it's responsive media Queries **************** */
+
+.site-footer {
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+/*************** footer section ends*****************/
+
+
+
+
+
+/***************** Actual reponsive mediaQueries start ****************************/
+
+@media (max-width:1220px) {
+
+    .main-section .container .content {
+        width: 100%;
+
+    }
+
+    .main-section .container .main-left-side {
+        padding-left: 40px;
+
+    }
+
+    .main-section .container .main-left-side h1 {
+        font-size: 3.5rem;
+    }
+
+    .main-section .container .main-left-side p {
+        font-size: 1.6rem;
+
+    }
+
+    .main-section .container .main-right-side {
+        color: var(--gray-dark);
+        padding: 40px 0;
+
+    }
+
+    .main-section .container .main-right-side .box form input {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    .courses-offer .max-width {
+        height: auto;
+        width: 100%;
+    }
+
+    .courses-offer .max-width .headings h1 {
+        font-size: 3.2rem;
+
+    }
+
+    .courses-offer .max-width .duration {
+        font-size: 1.8rem;
+
+    }
+
+    .courses-offer .max-width .box img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .courses-offer .max-width .box h1 {
+        font-size: 2.8rem;
+
+    }
+
+    .courses-offer .max-width .box .students {
+        font-size: 1.4rem;
+
+    }
+
+    .courses-offer .max-width .box .icon {
+        color: var(--purple);
+
+    }
+
+
+
+}
+
+@media (max-width:1186px) {
+    .max-width {
+        padding: 0
+    }
+
+    .main-section .container .content {
+        width: 100%;
+
+    }
+
+    .courses-offer .max-width {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .courses-offer .max-width .box {
+        padding: 0;
+    }
+
+    .courses-offer .max-width .box h1 {
+        font-size: 2.6rem;
+
+    }
+
+    .programs-offer .headings h1,
+    .teachers .headings h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .programs-offer .headings p,
+    .teachers .headings p {
+        font-size: 1.8rem;
+        padding: 0 10rem;
+
+    }
+
+
+    .programs-offer .feature-div-first .feature-left-side img,
+    .programs-offer .feature-div-second .feature-right-side img,
+    .programs-offer .feature-div-third .feature-left-side img {
+        height: 45rem;
+        width: 45rem;
+    }
+
+
+    .programs-offer .feature-div-first .feature-right-side,
+    .programs-offer .feature-div-second .feature-left-side,
+    .programs-offer .feature-div-third .feature-right-side {
+        padding-left: 60px;
+    }
+
+
+    .programs-offer .feature-div-first .feature-right-side h1,
+    .programs-offer .feature-div-second .feature-left-side h1,
+    .programs-offer .feature-div-third .feature-right-side h1 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .programs-offer .feature-div-first .feature-right-side p,
+    .programs-offer .feature-div-second .feature-left-side p,
+    .programs-offer .feature-div-third .feature-right-side p {
+        font-size: 1.6rem;
+
+        line-height: 2;
+
+    }
+
+    .programs-offer .feature-div-first .feature-right-side h2,
+    .programs-offer .feature-div-second .feature-left-side h2,
+    .programs-offer .feature-div-third .feature-right-side h2 {
+        font-size: 1.4rem;
+
+
+
+    }
+
+    .programs-offer .feature-div-first .feature-right-side .icon i,
+    .programs-offer .feature-div-second .feature-left-side .icon i,
+    .programs-offer .feature-div-third .feature-right-side .icon i {
+        height: 32px;
+        width: 32px;
+        font-size: 18px;
+    }
+
+    .FAQ .max-width h1 {
+        font-size: 3.2rem;
+    }
+
+    .FAQ .max-width .left-side .box {
+        height: 450px;
+        width: 400px;
+        margin-left: 60px;
+      
+    }
+    
+    .FAQ .container .left-side .box h2{
+        padding: 15px 0px;
+        margin-left: 20px;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    .FAQ .container .left-side .box i {
+        
+        height: 30px;
+        width: 30px;
+    
+    }
+
+    .FAQ .max-width .right-side .image img {
+        height: 400px;
+        width: 400px;
+        margin-top: 180px;
+    } 
+
+   
+
+
+}
+
+
+@media (max-width:1012px){
+     
+    .programs-offer .feature-div-first .feature-left-side img,
+    .programs-offer .feature-div-second .feature-right-side img,
+    .programs-offer .feature-div-third .feature-left-side img {
+        height: 35rem;
+        width: 35rem;
+       padding: 0;
+       margin: 0;
+    }
+
+    .programs-offer .max-width .headings p{
+        padding: 10px 0;
+    }
+    .teachers .max-width .container p{
+        padding: 10px 0;
+    }
+    .teachers .max-width .container .box p{
+       font-size: 1.7rem;
+    }
+    .student .container .text p{
+        padding: 0;
+    }
+    .student .container .image img{
+       height: 150px;
+       width: 150px;
+    }
+
+    
+    .contactUs .max-width .headings h1 {
+        font-size: 3.2rem;
+
+    
+    }
+    
+    .contactUs .max-width .headings p {
+        font-size: 1.8rem;
+    
+    }
+   
+    
+    .contactUs .container .content input {
+        font-size: 1.8rem;
+       
+    }
+
+    .contactUs .max-width .headings{
+        padding: 0 100px;
+    }
+    
+    
+   
+}
+@media (max-width:950px) {
+
+
+    html {
+        font-size: 50%;
+    }
+
+    .navbar.sticky {
+        padding: 25px 60px;
+       
+    }
+
+    .navbar .nav-items {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 8rem;
+        transition: 0.5s ease;
+    }
+
+    .navbar .nav-items.active {
+        left: 0;
+
+    }
+
+    .navbar .nav-items a li {
+        margin: 30px auto;
+        padding: 40px 10px;
+        font-weight: bold;
+        font-size: 3rem;
+
+    }
+
+    .navbar .nav-items {
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+        margin-top: 5px;
+
+
+    }
+
+    .navbar .right-side-btn {
+        display: none;
+    }
+
+    .menu-btn i.active::before {
+        content: "⭕";
+       
+
+    }
+
+    .contactUs .max-width .headings{
+        padding: 0 110px;
+    }
+
+
+}
+
+
+@media (max-width:768px) {
+
+    .navbar.sticky {
+        padding: 15px 30px;
+       
+    }
+    header .navbar {
+        
+        padding: 20px 30px;
+    
+    }
+    header .navbar .logo {
+        font-size: 2.4rem;
+      
+    
+    }
+    
+
+    .courses-offer .max-width .box{
+        width: 80%;
+        margin: 20px auto;
+      
+    }
+
+    .programs-offer .max-width .container .content {
+        text-align: center;
+        align-items: center;
+        margin: 5px 0;
+        padding: 30px 0;
+    }
+
+    .programs-offer .max-width .container .content .box{
+       margin-left: -50px;
+    }
+
+    .programs-offer .feature-div-first .feature-left-side img,
+    .programs-offer .feature-div-second .feature-right-side img,
+    .programs-offer .feature-div-third .feature-left-side img {
+        height: 50rem;
+        width: 50rem;
+      
+    }
+
+    .programs-offer .feature-div-first .feature-right-side h1,
+    .programs-offer .feature-div-second .feature-left-side h1,
+    .programs-offer .feature-div-third .feature-right-side h1 {
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .programs-offer .feature-div-first .feature-right-side p,
+    .programs-offer .feature-div-second .feature-left-side p,
+    .programs-offer .feature-div-third .feature-right-side p {
+        font-size: 1.8rem;
+
+        line-height: 2;
+
+    }
+
+    .programs-offer .feature-div-first .feature-right-side h2,
+    .programs-offer .feature-div-second .feature-left-side h2,
+    .programs-offer .feature-div-third .feature-right-side h2 {
+        font-size: 1.6rem;
+
+
+
+    }
+
+    .teachers .max-width .box{
+        width: 80%;
+        margin: auto;
+    }
+    .teachers .max-width .content .box h1{
+        font-size: 2.8rem;
+    }
+
+    .teachers .max-width .content .box h2{
+        font-size: 2.4rem;
+    }
+    .teachers .max-width .content .box p{
+       font-size: 2.2rem;
+       padding: 20px 30px;
+    }
+
+    .FAQ .container .left-side {
+        margin-left: 0;
+    }
+
+    .FAQ .container .left-side .box h2 {
+        padding: 10px 6px;
+        margin-left: 20px;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    
+    .FAQ .container .left-side .box i {
+        color: var(--white);
+        background-color: var(--purple);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 5px;
+    
+    }
+    
+    
+    .FAQ .max-width .right-side .image{
+        text-align: center;
+    }
+    .FAQ .max-width .right-side .image img {
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+       
+    } 
+
+
+    .contactUs .max-width .container p{
+        padding: 0 10px;
+    }
+    .contactUs .max-width .container h1{
+        margin-left: 8px;
+    }
+    .contactUs .max-width .container textarea{
+      height: 150px;
+    }
+
+    .contactUs .max-width  .headings {
+       
+        padding: 0 20px
+    }
+
+   
+    .footer{
+        padding: 0 20px;
+    }
+   
+
+}
+
+@media (max-width:690px) {
+    
+    .FAQ .max-width .left-side .box {
+        
+        height: 350px;
+        width: 300px;
+        margin-left: 40px;  
+        
+   }
+
+   .FAQ .max-width .left-side .box p{
+     font-size: 1.6rem;
+   } 
+   
+   
+   .FAQ .max-width .right-side .image{
+       text-align: center;
+   }
+   .FAQ .max-width .right-side .image img {
+       height: 350px;
+       width: 350px;
+       margin-top: 20px;
+      
+   } 
+   
+   .contactUs .max-width .container .form-btn .btn{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:500px) {
+
+    .courses-offer .max-width .box{
+        width: 95%;
+       margin: 20px auto;
+      
+    }
+
+    .main-section .container .main-left-side{
+        margin: 15px 0;
+    }
+    .main-section .container .main-right-side{
+        margin: -20px 0;
+    }
+    .programs-offer .feature-div-first .feature-left-side img,
+    .programs-offer .feature-div-second .feature-right-side img,
+    .programs-offer .feature-div-third .feature-left-side img {
+        height: 40rem;
+        width: 40rem;
+      
+    }
+
+      
+    .FAQ .max-width .left-side .box {
+        
+        height: 350px;
+        width: 300px;
+        margin-left: 50px;  
+        
+   }
+
+    .contactUs .container .content form {
+        
+        margin-left: 0;
+    
+    
+    }
+
+}
